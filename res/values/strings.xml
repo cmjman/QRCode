@@ -1,0 +1,35 @@
+<resources>
+
+    <string name="app_name">QRCode</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="menu_settings">Settings</string>
+    <string name="title_activity_qrcode">QRCode</string>
+   
+    <!-- For Activity_QREncode -->
+    <string name="name">姓名</string>
+    <string name="email">邮箱</string>
+    <string name="qq">QQ</string>
+    <string name="phone">手机</string>
+	<string name="draw">生成QRcode二维码</string>
+	<string name="save">保存QRcode二维码至相册</string>
+	
+	<string name="back">返回选择页面</string>
+	
+	<!-- For Activity_QRDecode -->
+	<string name="decode">拍照解码</string>
+	<string name="reset">重置</string>
+	<string name="decodep">解码图片</string>
+	
+	
+	<!-- For Activity_QRCode -->
+	<string name="QREncode">编码</string>
+	<string name="QRDecode">译码</string>
+	<string name="QRCard">查看名片</string>
+	
+	<!-- For Activity_DecodeResult -->
+	<string name="saveToContact">保存至手机联系人</string>
+	<string name="copyToClipboard">复制到剪贴板</string>
+	
+	<!-- For Activity_DecodePicture -->
+	<string name="choose">选取待解码图片</string>
+</resources>

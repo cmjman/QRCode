@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+  	>
+  
+	<RelativeLayout 
+	    android:layout_height="fill_parent"  
+        android:layout_width="fill_parent">  
+        
+        <GridView
+            android:background="@color/white"
+            android:layout_height="wrap_content" 
+            android:id="@+id/topBar"  
+            android:layout_alignParentTop="true" 
+            android:layout_width="fill_parent"  
+            android:fadingEdgeLength="10dp" 
+            android:fadingEdge="horizontal"
+            >  
+        </GridView>  
+        
+        <LinearLayout
+            android:background="@drawable/bg_repeat"
+            android:id="@+id/line"
+	    	android:layout_width="fill_parent"
+	    	android:layout_below="@id/topBar"
+	    	android:layout_height="3dp"
+	    	>
+		</LinearLayout>
+        
+        <LinearLayout android:id="@+id/Container"  
+            android:background="@drawable/bg_repeat"
+            android:layout_below="@id/line" 
+            android:layout_width="fill_parent"  
+            android:layout_height="fill_parent">  
+        </LinearLayout>  
+    
+    </RelativeLayout>  
+    
+</LinearLayout> 
+    
+  
+
+

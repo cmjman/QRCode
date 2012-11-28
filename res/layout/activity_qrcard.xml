@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" 
+    android:background="@drawable/bg_repeat"
+    android:id="@+id/linearlayout">
+
+    <Gallery
+        android:id="@+id/gallery"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:spacing="10dip"
+        android:unselectedAlpha="1.2" />
+
+    <ImageView
+        android:id="@+id/qrcardImage"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.92" />
+    
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        >
+    
+    <Button
+        android:id="@+id/share"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:background="@drawable/share"
+        />
+    
+    <Button 
+        android:id="@+id/delete"
+     	android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/delete"
+        android:layout_alignParentRight="true"
+        />
+    
+    </RelativeLayout>
+</LinearLayout>
