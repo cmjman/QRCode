@@ -155,9 +155,10 @@ public class QRDecode extends Activity /* implements SurfaceHolder.Callback*/{
 	protected void onActivityResult(int requestCode, int resultCode, Intent data) {  
         super.onActivityResult(requestCode, resultCode, data);  
         
+        if (null != data) { 
         if(requestCode==0){
         
-        if (null != data) {  
+        
             Uri selectedImage = data.getData();  
             String[] filePathColumn = { MediaStore.Images.Media.DATA };  
       
@@ -189,10 +190,10 @@ public class QRDecode extends Activity /* implements SurfaceHolder.Callback*/{
           
             	startActivityForResult(intent,0);
             }
-            	
-          
-        }  
-        }
+        
+        
+        	}  
+        
         
         else if(requestCode==1){
         	
@@ -203,6 +204,7 @@ public class QRDecode extends Activity /* implements SurfaceHolder.Callback*/{
             Intent intent = new Intent(QRDecode.this,DecodeResult.class);
             intent.putExtras(bundle);
             startActivity(intent);
+        }
         }
 	}
 	
